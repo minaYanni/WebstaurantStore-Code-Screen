@@ -1,0 +1,487 @@
+2021-11-16 16:09:29 INFO  MySeleniumLibrary:99 - starting 'Chrome' browser.
+2021-11-16 16:09:34 ERROR MySeleniumLibrary:105 - Error: 
+org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 91
+Current browser version is 95.0.4638.69 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-LMG0CP13', ip: '192.168.1.201', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00ED2DB3+2502067]
+	Ordinal0 [0x00E6C5B1+2082225]
+	Ordinal0 [0x00D72498+1057944]
+	Ordinal0 [0x00D905DA+1181146]
+	Ordinal0 [0x00D8C43C+1164348]
+	Ordinal0 [0x00D89C73+1154163]
+	Ordinal0 [0x00DB9A22+1350178]
+	Ordinal0 [0x00DB967A+1349242]
+	Ordinal0 [0x00DB5BEB+1334251]
+	Ordinal0 [0x00D92174+1188212]
+	Ordinal0 [0x00D93009+1191945]
+	GetHandleVerifier [0x0104EC5C+1511084]
+	GetHandleVerifier [0x010F8522+2205554]
+	GetHandleVerifier [0x00F53393+480739]
+	GetHandleVerifier [0x00F52579+477129]
+	Ordinal0 [0x00E71E5D+2104925]
+	Ordinal0 [0x00E763F8+2122744]
+	Ordinal0 [0x00E76537+2123063]
+	Ordinal0 [0x00E7EE53+2158163]
+	BaseThreadInitThunk [0x7555FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x76FE7A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x76FE7A6E+238]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at com.WebstaurantStore.libraries.MySeleniumLibrary.startChromeBrowser(MySeleniumLibrary.java:100)
+	at com.WebstaurantStore.libraries.MySeleniumLibrary.startBrowser(MySeleniumLibrary.java:63)
+	at com.WebstaurantStore.libraries.Base.setUp(Base.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+2021-11-16 16:18:27 INFO  MySeleniumLibrary:99 - starting 'Chrome' browser.
+2021-11-16 16:18:32 INFO  MySeleniumLibrary:115 - Maximaizing the Browser
+2021-11-16 16:18:39 INFO  Base:32 - website title is: WebstaurantStore: Restaurant Supplies & Foodservice Equipment
+2021-11-16 16:18:39 INFO  HomePage:17 - Searching for Stainless Work Table
+2021-11-16 16:18:40 INFO  HomePage:26 - Clicking On the Search Button
+2021-11-16 16:18:47 INFO  Base:39 - After Method....
+2021-11-16 16:18:52 INFO  Base:50 - After Class....
+2021-11-16 16:20:59 INFO  MySeleniumLibrary:99 - starting 'Chrome' browser.
+2021-11-16 16:21:04 INFO  MySeleniumLibrary:115 - Maximaizing the Browser
+2021-11-16 16:21:11 INFO  Base:32 - website title is: WebstaurantStore: Restaurant Supplies & Foodservice Equipment
+2021-11-16 16:21:11 INFO  HomePage:17 - Searching for Stainless Work Table
+2021-11-16 16:21:12 INFO  HomePage:26 - Clicking On the Search Button
+2021-11-16 16:21:20 INFO  Base:39 - After Method....
+2021-11-16 16:21:25 INFO  Base:50 - After Class....
+2021-11-16 17:30:47 INFO  MySeleniumLibrary:99 - starting 'Chrome' browser.
+2021-11-16 17:30:49 INFO  MySeleniumLibrary:99 - starting 'Chrome' browser.
+2021-11-16 17:30:54 INFO  MySeleniumLibrary:115 - Maximaizing the Browser
+2021-11-16 17:31:00 INFO  MySeleniumLibrary:115 - Maximaizing the Browser
+2021-11-16 17:31:09 INFO  Base:32 - website title is: WebstaurantStore: Restaurant Supplies & Foodservice Equipment
+2021-11-16 17:31:09 INFO  HomePage:17 - Searching for Stainless Work Table
+2021-11-16 17:31:12 INFO  HomePage:26 - Clicking On the Search Button
+2021-11-16 17:31:15 INFO  Base:32 - website title is: WebstaurantStore: Restaurant Supplies & Foodservice Equipment
+2021-11-16 17:31:15 INFO  HomePage:17 - Searching for Stainless Work Table
+2021-11-16 17:31:17 INFO  HomePage:26 - Clicking On the Search Button
+2021-11-16 17:31:27 INFO  HomePage:17 - Veifying that Search results for every product item has the word Table
+2021-11-16 17:31:29 INFO  MySeleniumLibrary:287 - Regency 30" x 72" 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf
+2021-11-16 17:31:29 INFO  MySeleniumLibrary:287 - Regency 30" x 72" 16-Gauge 304 Stainless Steel Commercial Work Table with Undershelf
+2021-11-16 17:31:29 INFO  MySeleniumLibrary:287 - Regency 30" x 60" 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf
+2021-11-16 17:31:29 INFO  HomePage:17 - Veifying that Search results for every product item has the word Table
+2021-11-16 17:31:29 INFO  MySeleniumLibrary:287 - Regency 30" x 96" 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf
+2021-11-16 17:31:30 INFO  MySeleniumLibrary:287 - Regency 30" x 72" 16-Gauge Stainless Steel Commercial Work Table with 4" Backsplash and Undershelf
+2021-11-16 17:31:30 INFO  MySeleniumLibrary:287 - Regency 24" x 48" 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf
+2021-11-16 17:31:30 INFO  MySeleniumLibrary:287 - Regency 30" x 72" 18-Gauge 304 Stainless Steel Commercial Work Table with 4" Backsplash and Galvanized Undershelf
+2021-11-16 17:31:30 INFO  MySeleniumLibrary:287 - Regency 30" x 48" 16-Gauge Stainless Steel Commercial Work Table with 4" Backsplash and Undershelf
+2021-11-16 17:31:30 INFO  MySeleniumLibrary:287 - Regency 24" x 60" 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf
+2021-11-16 17:31:30 INFO  MySeleniumLibrary:287 - Regency 24" x 72" 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf
+2021-11-16 17:31:30 INFO  MySeleniumLibrary:287 - Regency 30" x 60" 16-Gauge Stainless Steel Commercial Work Table with 4" Backsplash and Undershelf
+2021-11-16 17:31:31 INFO  MySeleniumLibrary:287 - Regency 24" x 36" 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf
+2021-11-16 17:31:31 INFO  MySeleniumLibrary:287 - Regency 30" x 60" 16-Gauge 304 Stainless Steel Commercial Work Table with Undershelf
+2021-11-16 17:31:31 INFO  MySeleniumLibrary:287 - Regency 30" x 96" 16-Gauge 304 Stainless Steel Commercial Work Table with Undershelf
+2021-11-16 17:31:31 INFO  MySeleniumLibrary:287 - Regency 30" x 48" 16-Gauge 304 Stainless Steel Commercial Work Table with Undershelf
+2021-11-16 17:31:31 INFO  MySeleniumLibrary:287 - Regency 18" x 48" 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf
+2021-11-16 17:31:31 INFO  MySeleniumLibrary:287 - Regency 30" x 60" 16 Gauge Stainless Steel Work Table with Sink
+2021-11-16 17:31:31 INFO  MySeleniumLibrary:287 - Regency Spec Line 30" x 72" 14 Gauge Stainless Steel Commercial Work Table with Undershelf
+2021-11-16 17:31:31 INFO  MySeleniumLibrary:287 - Regency 30" x 96" 16-Gauge Stainless Steel Commercial Work Table with 4" Backsplash and Undershelf
+2021-11-16 17:31:31 INFO  MySeleniumLibrary:287 - Regency 30" x 48" 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf
+2021-11-16 17:31:31 INFO  MySeleniumLibrary:287 - Regency 24" x 24" 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf
+2021-11-16 17:31:31 INFO  MySeleniumLibrary:287 - Regency 24" x 60" 18-Gauge 304 Stainless Steel Commercial Work Table with 4" Backsplash and Galvanized Undershelf
+2021-11-16 17:31:31 INFO  MySeleniumLibrary:287 - Regency 18" x 36" 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf
+2021-11-16 17:31:32 INFO  MySeleniumLibrary:287 - Regency 30" x 48" 18-Gauge 304 Stainless Steel Commercial Work Table with 4" Backsplash and Galvanized Undershelf
+2021-11-16 17:31:32 INFO  MySeleniumLibrary:287 - Regency 30" x 60" 18-Gauge 304 Stainless Steel Commercial Work Table with 4" Backsplash and Galvanized Undershelf
+2021-11-16 17:31:32 INFO  MySeleniumLibrary:287 - Regency 30" x 72" 16 Gauge Stainless Steel Work Table with Sink
+2021-11-16 17:31:32 INFO  MySeleniumLibrary:287 - Regency 24" x 72" 18-Gauge 304 Stainless Steel Commercial Work Table with 4" Backsplash and Galvanized Undershelf
+2021-11-16 17:31:32 INFO  MySeleniumLibrary:287 - Regency 30" x 72" 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf
+2021-11-16 17:31:32 INFO  MySeleniumLibrary:287 - Regency 18" x 72" 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf
+2021-11-16 17:31:32 INFO  MySeleniumLibrary:287 - Regency 30" x 72" 16-Gauge 304 Stainless Steel Commercial Work Table with Undershelf
+2021-11-16 17:31:32 INFO  MySeleniumLibrary:287 - Regency 24" x 60" 16-Gauge Stainless Steel Commercial Work Table with 4" Backsplash and Undershelf
+2021-11-16 17:31:32 INFO  MySeleniumLibrary:287 - Regency 30" x 60" 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf
+2021-11-16 17:31:32 INFO  MySeleniumLibrary:287 - Regency 18" x 24" 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf
+2021-11-16 17:31:32 INFO  MySeleniumLibrary:287 - Regency 30" x 96" 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf
+2021-11-16 17:31:32 INFO  MySeleniumLibrary:287 - Regency 24" x 48" 16-Gauge 304 Stainless Steel Commercial Work Table with Undershelf
+2021-11-16 17:31:32 INFO  MySeleniumLibrary:287 - Regency 30" x 72" 16-Gauge Stainless Steel Commercial Work Table with 4" Backsplash and Undershelf
+2021-11-16 17:31:32 INFO  MySeleniumLibrary:287 - Regency 30" x 48" 16 Gauge Stainless Steel Work Table with Sink
+2021-11-16 17:31:32 INFO  MySeleniumLibrary:287 - Regency 24" x 48" 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf
+2021-11-16 17:31:32 INFO  MySeleniumLibrary:287 - Regency 18" x 60" 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf
+2021-11-16 17:31:32 INFO  MySeleniumLibrary:287 - Regency 30" x 72" 18-Gauge 304 Stainless Steel Commercial Work Table with 4" Backsplash and Galvanized Undershelf
+2021-11-16 17:31:32 INFO  MySeleniumLibrary:287 - Regency 24" x 48" 16-Gauge Stainless Steel Commercial Work Table with 4" Backsplash and Undershelf
+2021-11-16 17:31:32 INFO  MySeleniumLibrary:287 - Regency 30" x 48" 16-Gauge Stainless Steel Commercial Work Table with 4" Backsplash and Undershelf
+2021-11-16 17:31:32 INFO  MySeleniumLibrary:287 - Regency 24" x 48" 18-Gauge 304 Stainless Steel Commercial Work Table with 4" Backsplash and Galvanized Undershelf
+2021-11-16 17:31:33 INFO  MySeleniumLibrary:287 - Regency 24" x 60" 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf
+2021-11-16 17:31:33 INFO  MySeleniumLibrary:287 - Regency 24" x 30" 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf
+2021-11-16 17:31:33 INFO  MySeleniumLibrary:287 - Regency 24" x 72" 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf
+2021-11-16 17:31:33 INFO  MySeleniumLibrary:287 - Regency 24" x 72" 16-Gauge Stainless Steel Commercial Work Table with 4" Backsplash and Undershelf
+2021-11-16 17:31:33 INFO  MySeleniumLibrary:287 - Regency 30" x 60" 16-Gauge Stainless Steel Commercial Work Table with 4" Backsplash and Undershelf
+2021-11-16 17:31:33 INFO  MySeleniumLibrary:287 - Regency 18" x 30" 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf
+2021-11-16 17:31:33 INFO  MySeleniumLibrary:287 - Regency Spec Line 36" x 72" 14 Gauge Stainless Steel Commercial Work Table with Undershelf
+2021-11-16 17:31:33 INFO  MySeleniumLibrary:287 - Regency 24" x 36" 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf
+2021-11-16 17:31:33 INFO  MySeleniumLibrary:287 - Regency Spec Line 30" x 96" 14 Gauge Stainless Steel Commercial Work Table with Undershelf
+2021-11-16 17:31:33 INFO  MySeleniumLibrary:287 - Regency 30" x 60" 16-Gauge 304 Stainless Steel Commercial Work Table with Undershelf
+2021-11-16 17:31:33 INFO  MySeleniumLibrary:287 - Regency Spec Line 30" x 72" 14 Gauge Stainless Steel Commercial Work Table with 4" Backsplash and Undershelf
+2021-11-16 17:31:33 INFO  MySeleniumLibrary:287 - Regency 30" x 96" 16-Gauge 304 Stainless Steel Commercial Work Table with Undershelf
+2021-11-16 17:31:33 INFO  MySeleniumLibrary:287 - Regency 24" x 36" 18-Gauge 304 Stainless Steel Commercial Work Table with 4" Backsplash and Galvanized Undershelf
+2021-11-16 17:31:33 INFO  MySeleniumLibrary:287 - Regency 30" x 48" 16-Gauge 304 Stainless Steel Commercial Work Table with Undershelf
+2021-11-16 17:31:33 INFO  MySeleniumLibrary:287 - Regency 18" x 48" 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf
+2021-11-16 17:31:33 INFO  MySeleniumLibrary:287 - Regency 30" x 12" 18-Gauge 304 Stainless Steel Equipment Filler Table with Backsplash and Galvanized Undershelf
+2021-11-16 17:31:33 INFO  MySeleniumLibrary:287 - Regency 30" x 60" 16 Gauge Stainless Steel Work Table with Sink
+2021-11-16 17:31:33 INFO  MySeleniumLibrary:287 - Regency 30" x 36" 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf
+2021-11-16 17:31:33 INFO  MySeleniumLibrary:287 - Regency Spec Line 30" x 72" 14 Gauge Stainless Steel Commercial Work Table with Undershelf
+2021-11-16 17:31:33 INFO  MySeleniumLibrary:287 - Regency 24" x 60" 16-Gauge 304 Stainless Steel Commercial Work Table with Undershelf
+2021-11-16 17:31:33 INFO  MySeleniumLibrary:287 - Regency 30" x 96" 16-Gauge Stainless Steel Commercial Work Table with 4" Backsplash and Undershelf
+2021-11-16 17:31:33 INFO  MySeleniumLibrary:287 - Regency 24" x 36" 16-Gauge Stainless Steel Commercial Work Table with 4" Backsplash and Undershelf
+2021-11-16 17:31:33 INFO  MySeleniumLibrary:287 - Regency 30" x 48" 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf
+2021-11-16 17:31:33 INFO  MySeleniumLibrary:287 - Regency 30" x 36" 16-Gauge Stainless Steel Commercial Work Table with 4" Backsplash and Undershelf
+2021-11-16 17:31:33 INFO  MySeleniumLibrary:287 - Regency 24" x 24" 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf
+2021-11-16 17:31:33 INFO  MySeleniumLibrary:287 - Regency 30" x 96" 16 Gauge Stainless Steel Work Table with Sink
+2021-11-16 17:31:33 INFO  MySeleniumLibrary:287 - Regency 24" x 60" 18-Gauge 304 Stainless Steel Commercial Work Table with 4" Backsplash and Galvanized Undershelf
+2021-11-16 17:31:33 INFO  MySeleniumLibrary:287 - Regency 18" x 36" 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf
+2021-11-16 17:31:33 INFO  MySeleniumLibrary:287 - Regency 30" x 84" 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf
+2021-11-16 17:31:34 INFO  MySeleniumLibrary:287 - Regency 30" x 48" 18-Gauge 304 Stainless Steel Commercial Work Table with 4" Backsplash and Galvanized Undershelf
+2021-11-16 17:31:34 INFO  MySeleniumLibrary:287 - Regency 24" x 30" 16-Gauge 304 Stainless Steel Commercial Work Table with Undershelf
+2021-11-16 17:31:34 INFO  MySeleniumLibrary:287 - Regency 30" x 60" 18-Gauge 304 Stainless Steel Commercial Work Table with 4" Backsplash and Galvanized Undershelf
+2021-11-16 17:31:34 INFO  MySeleniumLibrary:287 - Regency 24" x 72" 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs, Undershelf, and Casters
+2021-11-16 17:31:34 INFO  MySeleniumLibrary:287 - Regency 30" x 72" 16 Gauge Stainless Steel Work Table with Sink
+2021-11-16 17:31:34 INFO  MySeleniumLibrary:287 - Regency 24" x 60" 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs, Undershelf, and Casters
+2021-11-16 17:31:34 INFO  MySeleniumLibrary:287 - Regency 24" x 36" 16-Gauge 304 Stainless Steel Commercial Work Table with Undershelf
+2021-11-16 17:31:34 INFO  MySeleniumLibrary:287 - Regency 24" x 72" 18-Gauge 304 Stainless Steel Commercial Work Table with 4" Backsplash and Galvanized Undershelf
+2021-11-16 17:31:34 INFO  MySeleniumLibrary:287 - Regency 18" x 72" 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf
+2021-11-16 17:31:34 INFO  MySeleniumLibrary:287 - Regency 30" x 96" 18-Gauge 304 Stainless Steel Commercial Work Table with 4" Backsplash and Galvanized Undershelf
+2021-11-16 17:31:34 INFO  MySeleniumLibrary:287 - Regency 24" x 60" 16-Gauge Stainless Steel Commercial Work Table with 4" Backsplash and Undershelf
+2021-11-16 17:31:34 INFO  MySeleniumLibrary:287 - Regency Spec Line 36" x 96" 14 Gauge Stainless Steel Commercial Work Table with Undershelf
+2021-11-16 17:31:34 INFO  MySeleniumLibrary:287 - Regency 18" x 24" 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf
+2021-11-16 17:31:34 INFO  MySeleniumLibrary:287 - Regency 30" x 36" 16-Gauge 304 Stainless Steel Commercial Work Table with Undershelf
+2021-11-16 17:31:34 INFO  MySeleniumLibrary:287 - Regency 24" x 48" 16-Gauge 304 Stainless Steel Commercial Work Table with Undershelf
+2021-11-16 17:31:34 INFO  MySeleniumLibrary:287 - Regency Spec Line 30" x 96" 14 Gauge Stainless Steel Commercial Work Table with 4" Backsplash and Undershelf
+2021-11-16 17:31:34 INFO  MySeleniumLibrary:287 - Regency 30" x 48" 16 Gauge Stainless Steel Work Table with Sink
+2021-11-16 17:31:34 INFO  MySeleniumLibrary:287 - Regency 24" x 72" 16-Gauge 304 Stainless Steel Commercial Work Table with Undershelf
+2021-11-16 17:31:34 INFO  MySeleniumLibrary:287 - Regency 18" x 60" 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf
+2021-11-16 17:31:34 INFO  MySeleniumLibrary:287 - Regency Spec Line 30" x 60" 14 Gauge Stainless Steel Commercial Work Table with 4" Backsplash and Undershelf
+2021-11-16 17:31:34 INFO  MySeleniumLibrary:287 - Regency 18" x 48" 18-Gauge 304 Stainless Steel Commercial Work Table with 4" Backsplash and Galvanized Undershelf
+2021-11-16 17:31:34 INFO  Base:39 - After Method....
+2021-11-16 17:31:35 INFO  MySeleniumLibrary:287 - Regency 24" x 48" 16-Gauge Stainless Steel Commercial Work Table with 4" Backsplash and Undershelf
+2021-11-16 17:31:35 INFO  MySeleniumLibrary:287 - Regency 24" x 48" 18-Gauge 304 Stainless Steel Commercial Work Table with 4" Backsplash and Galvanized Undershelf
+2021-11-16 17:31:35 INFO  MySeleniumLibrary:287 - Regency 24" x 30" 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf
+2021-11-16 17:31:35 INFO  MySeleniumLibrary:287 - Regency 24" x 72" 16-Gauge Stainless Steel Commercial Work Table with 4" Backsplash and Undershelf
+2021-11-16 17:31:35 INFO  MySeleniumLibrary:287 - Regency 18" x 30" 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf
+2021-11-16 17:31:35 INFO  MySeleniumLibrary:287 - Regency Spec Line 36" x 72" 14 Gauge Stainless Steel Commercial Work Table with Undershelf
+2021-11-16 17:31:35 INFO  MySeleniumLibrary:287 - Regency Spec Line 30" x 96" 14 Gauge Stainless Steel Commercial Work Table with Undershelf
+2021-11-16 17:31:35 INFO  MySeleniumLibrary:287 - Regency Spec Line 30" x 72" 14 Gauge Stainless Steel Commercial Work Table with 4" Backsplash and Undershelf
+2021-11-16 17:31:36 INFO  MySeleniumLibrary:287 - Regency 24" x 36" 18-Gauge 304 Stainless Steel Commercial Work Table with 4" Backsplash and Galvanized Undershelf
+2021-11-16 17:31:36 INFO  MySeleniumLibrary:287 - Regency 30" x 12" 18-Gauge 304 Stainless Steel Equipment Filler Table with Backsplash and Galvanized Undershelf
+2021-11-16 17:31:36 INFO  MySeleniumLibrary:287 - Regency 30" x 36" 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf
+2021-11-16 17:31:36 INFO  MySeleniumLibrary:287 - Regency 24" x 60" 16-Gauge 304 Stainless Steel Commercial Work Table with Undershelf
+2021-11-16 17:31:36 INFO  MySeleniumLibrary:287 - Regency 24" x 36" 16-Gauge Stainless Steel Commercial Work Table with 4" Backsplash and Undershelf
+2021-11-16 17:31:36 INFO  MySeleniumLibrary:287 - Regency 30" x 36" 16-Gauge Stainless Steel Commercial Work Table with 4" Backsplash and Undershelf
+2021-11-16 17:31:36 INFO  MySeleniumLibrary:287 - Regency 30" x 96" 16 Gauge Stainless Steel Work Table with Sink
+2021-11-16 17:31:36 INFO  MySeleniumLibrary:287 - Regency 30" x 84" 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf
+2021-11-16 17:31:36 INFO  MySeleniumLibrary:287 - Regency 24" x 30" 16-Gauge 304 Stainless Steel Commercial Work Table with Undershelf
+2021-11-16 17:31:36 INFO  MySeleniumLibrary:287 - Regency 24" x 72" 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs, Undershelf, and Casters
+2021-11-16 17:31:36 INFO  MySeleniumLibrary:287 - Regency 24" x 60" 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs, Undershelf, and Casters
+2021-11-16 17:31:36 INFO  MySeleniumLibrary:287 - Regency 24" x 36" 16-Gauge 304 Stainless Steel Commercial Work Table with Undershelf
+2021-11-16 17:31:36 INFO  MySeleniumLibrary:287 - Regency 30" x 96" 18-Gauge 304 Stainless Steel Commercial Work Table with 4" Backsplash and Galvanized Undershelf
+2021-11-16 17:31:36 INFO  MySeleniumLibrary:287 - Regency Spec Line 36" x 96" 14 Gauge Stainless Steel Commercial Work Table with Undershelf
+2021-11-16 17:31:36 INFO  MySeleniumLibrary:287 - Regency 30" x 36" 16-Gauge 304 Stainless Steel Commercial Work Table with Undershelf
+2021-11-16 17:31:36 INFO  MySeleniumLibrary:287 - Regency Spec Line 30" x 96" 14 Gauge Stainless Steel Commercial Work Table with 4" Backsplash and Undershelf
+2021-11-16 17:31:36 INFO  MySeleniumLibrary:287 - Regency 24" x 72" 16-Gauge 304 Stainless Steel Commercial Work Table with Undershelf
+2021-11-16 17:31:37 INFO  MySeleniumLibrary:287 - Regency Spec Line 30" x 60" 14 Gauge Stainless Steel Commercial Work Table with 4" Backsplash and Undershelf
+2021-11-16 17:31:37 INFO  MySeleniumLibrary:287 - Regency 18" x 48" 18-Gauge 304 Stainless Steel Commercial Work Table with 4" Backsplash and Galvanized Undershelf
+2021-11-16 17:31:37 INFO  Base:39 - After Method....
+2021-11-16 17:31:42 INFO  Base:50 - After Class....
+2021-11-16 17:31:44 INFO  Base:50 - After Class....
+2021-11-16 18:08:22 INFO  MySeleniumLibrary:101 - starting 'Chrome' browser.
+2021-11-16 18:08:26 INFO  MySeleniumLibrary:117 - Maximaizing the Browser
+2021-11-16 18:08:29 INFO  Base:32 - website title is: WebstaurantStore: Restaurant Supplies & Foodservice Equipment
+2021-11-16 18:08:29 INFO  HomePage:17 - Searching for Stainless Work Table
+2021-11-16 18:08:29 INFO  HomePage:26 - Clicking On the Search Button
+2021-11-16 18:08:35 INFO  HomePage:22 - Veifying that Search results for every product item has the word Table
+2021-11-16 18:08:36 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:36 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:36 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:36 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:36 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:36 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:36 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:36 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:36 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:36 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:36 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:36 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:36 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:36 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:36 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:36 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:36 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:36 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:36 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:37 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:37 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:37 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:37 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:37 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:37 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:37 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:37 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:37 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:37 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:37 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:37 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:37 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:37 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:37 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:37 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:37 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:37 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:37 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:37 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:37 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:37 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:37 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:37 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:37 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:37 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:37 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:37 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:37 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:37 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:37 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:37 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:37 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:37 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:37 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:37 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:37 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:37 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:37 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:37 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:37 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:08:37 INFO  Base:39 - After Method....
+2021-11-16 18:08:43 INFO  Base:50 - After Class....
+2021-11-16 18:09:59 INFO  MySeleniumLibrary:101 - starting 'Chrome' browser.
+2021-11-16 18:10:02 INFO  MySeleniumLibrary:117 - Maximaizing the Browser
+2021-11-16 18:10:06 INFO  Base:32 - website title is: WebstaurantStore: Restaurant Supplies & Foodservice Equipment
+2021-11-16 18:10:07 INFO  HomePage:17 - Searching for Stainless Work Table
+2021-11-16 18:10:07 INFO  HomePage:26 - Clicking On the Search Button
+2021-11-16 18:10:13 INFO  HomePage:22 - Veifying that Search results for every product item has the word Table
+2021-11-16 18:10:14 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:14 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:14 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:14 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:15 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:16 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:16 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:16 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:16 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:16 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:16 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:16 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:16 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:16 INFO  MySeleniumLibrary:292 - Last Page Results 9
+2021-11-16 18:10:16 INFO  Base:39 - After Method....
+2021-11-16 18:10:21 INFO  Base:50 - After Class....
+2021-11-16 18:13:16 INFO  MySeleniumLibrary:101 - starting 'Chrome' browser.
+2021-11-16 18:13:21 INFO  MySeleniumLibrary:117 - Maximaizing the Browser
+2021-11-16 18:13:27 INFO  Base:32 - website title is: WebstaurantStore: Restaurant Supplies & Foodservice Equipment
+2021-11-16 18:13:27 INFO  HomePage:17 - Searching for Stainless Work Table
+2021-11-16 18:13:28 INFO  HomePage:26 - Clicking On the Search Button
+2021-11-16 18:13:36 INFO  HomePage:22 - Veifying that Search results for every product item has the word Table
+2021-11-16 18:13:38 INFO  Base:39 - After Method....
+2021-11-16 18:13:43 INFO  Base:50 - After Class....
+2021-11-16 18:29:44 INFO  MySeleniumLibrary:101 - starting 'Chrome' browser.
+2021-11-16 18:29:49 INFO  MySeleniumLibrary:117 - Maximaizing the Browser
+2021-11-16 18:29:53 INFO  Base:32 - website title is: WebstaurantStore: Restaurant Supplies & Foodservice Equipment
+2021-11-16 18:29:53 INFO  HomePage:17 - Searching for Stainless Work Table
+2021-11-16 18:29:54 INFO  HomePage:26 - Clicking On the Search Button
+2021-11-16 18:30:01 INFO  HomePage:22 - Veifying that Search results for every product item has the word Table
+2021-11-16 18:30:02 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:02 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:03 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:03 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:03 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:03 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:03 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:03 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:03 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:03 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:03 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:03 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:03 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:03 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:03 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:03 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:03 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:03 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:03 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:03 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:03 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:03 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:03 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:03 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:03 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:03 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:03 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:03 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:03 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:04 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:04 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:04 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:04 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:04 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:04 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:04 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:04 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:04 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:04 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:04 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:04 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:04 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:04 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:04 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:04 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:04 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:04 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:04 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:04 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:04 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:04 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:04 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:04 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:05 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:05 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:05 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:05 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:05 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:05 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:05 INFO  MySeleniumLibrary:292 - Last Page Results 60
+2021-11-16 18:30:05 INFO  Base:39 - After Method....
+2021-11-16 18:30:10 INFO  Base:50 - After Class....
+2021-11-16 18:32:16 INFO  MySeleniumLibrary:100 - starting 'Chrome' browser.
+2021-11-16 18:32:21 INFO  MySeleniumLibrary:116 - Maximaizing the Browser
+2021-11-16 18:32:40 INFO  Base:32 - website title is: WebstaurantStore: Restaurant Supplies & Foodservice Equipment
+2021-11-16 18:32:40 INFO  HomePage:17 - Searching for Stainless Work Table
+2021-11-16 18:32:41 INFO  HomePage:26 - Clicking On the Search Button
+2021-11-16 18:32:47 INFO  HomePage:22 - Veifying that Search results for every product item has the word Table
+2021-11-16 18:32:51 INFO  MySeleniumLibrary:290 - Last Page Results 60
+2021-11-16 18:32:51 INFO  Base:39 - After Method....
+2021-11-16 18:32:56 INFO  Base:50 - After Class....
+2021-11-16 18:56:11 INFO  MySeleniumLibrary:100 - starting 'Chrome' browser.
+2021-11-16 18:56:17 INFO  MySeleniumLibrary:116 - Maximaizing the Browser
+2021-11-16 18:56:21 INFO  Base:32 - website title is: WebstaurantStore: Restaurant Supplies & Foodservice Equipment
+2021-11-16 18:56:21 INFO  HomePage:17 - Searching for Stainless Work Table
+2021-11-16 18:56:23 INFO  HomePage:26 - Clicking On the Search Button
+2021-11-16 18:56:30 INFO  Base:39 - After Method....
+2021-11-16 18:56:35 INFO  Base:50 - After Class....
+2021-11-16 19:10:47 INFO  MySeleniumLibrary:100 - starting 'Chrome' browser.
+2021-11-16 19:10:53 INFO  MySeleniumLibrary:116 - Maximaizing the Browser
+2021-11-16 19:10:56 INFO  Base:32 - website title is: WebstaurantStore: Restaurant Supplies & Foodservice Equipment
+2021-11-16 19:10:56 INFO  HomePage:17 - Searching for Stainless Work Table
+2021-11-16 19:10:57 INFO  HomePage:26 - Clicking On the Search Button
+2021-11-16 19:11:05 INFO  Base:39 - After Method....
+2021-11-16 19:11:10 INFO  Base:50 - After Class....
+2021-11-16 19:12:51 INFO  MySeleniumLibrary:100 - starting 'Chrome' browser.
+2021-11-16 19:12:54 INFO  MySeleniumLibrary:116 - Maximaizing the Browser
+2021-11-16 19:12:57 INFO  Base:32 - website title is: WebstaurantStore: Restaurant Supplies & Foodservice Equipment
+2021-11-16 19:12:57 INFO  HomePage:17 - Searching for Stainless Work Table
+2021-11-16 19:12:59 INFO  HomePage:26 - Clicking On the Search Button
+2021-11-16 19:13:02 INFO  HomePage:30 - Veifying that Search results for every product item has the word Table
+2021-11-16 19:13:04 INFO  MySeleniumLibrary:289 - Last Page Results 60
+2021-11-16 19:13:04 INFO  Base:39 - After Method....
+2021-11-16 19:13:09 INFO  Base:50 - After Class....

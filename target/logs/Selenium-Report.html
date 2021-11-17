@@ -1,0 +1,3968 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Selenium Logs</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Nov 16 16:09:29 EST 2021<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:99</td>
+<td title="Message">starting 'Chrome' browser.</td>
+</tr>
+
+<tr>
+<td>5487</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:105</td>
+<td title="Message">Error: </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 91
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Current browser version is 95.0.4638.69 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+<br>&nbsp;&nbsp;&nbsp;&nbsp;System info: host: 'LAPTOP-LMG0CP13', ip: '192.168.1.201', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Driver info: driver.version: ChromeDriver
+<br>&nbsp;&nbsp;&nbsp;&nbsp;remote stacktrace: Backtrace:
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x00ED2DB3+2502067]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x00E6C5B1+2082225]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x00D72498+1057944]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x00D905DA+1181146]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x00D8C43C+1164348]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x00D89C73+1154163]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x00DB9A22+1350178]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x00DB967A+1349242]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x00DB5BEB+1334251]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x00D92174+1188212]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x00D93009+1191945]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	GetHandleVerifier [0x0104EC5C+1511084]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	GetHandleVerifier [0x010F8522+2205554]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	GetHandleVerifier [0x00F53393+480739]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	GetHandleVerifier [0x00F52579+477129]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x00E71E5D+2104925]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x00E763F8+2122744]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x00E76537+2123063]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x00E7EE53+2158163]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	BaseThreadInitThunk [0x7555FA29+25]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	RtlGetAppContainerNamedObjectPath [0x76FE7A9E+286]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	RtlGetAppContainerNamedObjectPath [0x76FE7A6E+238]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.WebstaurantStore.libraries.MySeleniumLibrary.startChromeBrowser(MySeleniumLibrary.java:100)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.WebstaurantStore.libraries.MySeleniumLibrary.startBrowser(MySeleniumLibrary.java:63)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.WebstaurantStore.libraries.Base.setUp(Base.java:26)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.run(TestRunner.java:585)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuites(TestNG.java:1069)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.run(TestNG.java:1037)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Selenium Logs</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Nov 16 16:18:27 EST 2021<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:99</td>
+<td title="Message">starting 'Chrome' browser.</td>
+</tr>
+
+<tr>
+<td>5371</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:115</td>
+<td title="Message">Maximaizing the Browser</td>
+</tr>
+
+<tr>
+<td>12037</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.Base category">com.WebstaurantStore.libraries.Base</td>
+<td>Base.java:32</td>
+<td title="Message">website title is: WebstaurantStore: Restaurant Supplies &amp; Foodservice Equipment</td>
+</tr>
+
+<tr>
+<td>12079</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.pages.HomePage category">com.WebstaurantStore.pages.HomePage</td>
+<td>HomePage.java:17</td>
+<td title="Message">Searching for Stainless Work Table</td>
+</tr>
+
+<tr>
+<td>12864</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.pages.HomePage category">com.WebstaurantStore.pages.HomePage</td>
+<td>HomePage.java:26</td>
+<td title="Message">Clicking On the Search Button</td>
+</tr>
+
+<tr>
+<td>19848</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.Base category">com.WebstaurantStore.libraries.Base</td>
+<td>Base.java:39</td>
+<td title="Message">After Method....</td>
+</tr>
+
+<tr>
+<td>25339</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.Base category">com.WebstaurantStore.libraries.Base</td>
+<td>Base.java:50</td>
+<td title="Message">After Class....</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Selenium Logs</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Nov 16 16:20:59 EST 2021<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:99</td>
+<td title="Message">starting 'Chrome' browser.</td>
+</tr>
+
+<tr>
+<td>5013</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:115</td>
+<td title="Message">Maximaizing the Browser</td>
+</tr>
+
+<tr>
+<td>11730</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.Base category">com.WebstaurantStore.libraries.Base</td>
+<td>Base.java:32</td>
+<td title="Message">website title is: WebstaurantStore: Restaurant Supplies &amp; Foodservice Equipment</td>
+</tr>
+
+<tr>
+<td>11775</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.pages.HomePage category">com.WebstaurantStore.pages.HomePage</td>
+<td>HomePage.java:17</td>
+<td title="Message">Searching for Stainless Work Table</td>
+</tr>
+
+<tr>
+<td>12740</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.pages.HomePage category">com.WebstaurantStore.pages.HomePage</td>
+<td>HomePage.java:26</td>
+<td title="Message">Clicking On the Search Button</td>
+</tr>
+
+<tr>
+<td>20453</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.Base category">com.WebstaurantStore.libraries.Base</td>
+<td>Base.java:39</td>
+<td title="Message">After Method....</td>
+</tr>
+
+<tr>
+<td>25956</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.Base category">com.WebstaurantStore.libraries.Base</td>
+<td>Base.java:50</td>
+<td title="Message">After Class....</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Selenium Logs</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Nov 16 17:30:46 EST 2021<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:99</td>
+<td title="Message">starting 'Chrome' browser.</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Selenium Logs</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Nov 16 17:30:49 EST 2021<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:99</td>
+<td title="Message">starting 'Chrome' browser.</td>
+</tr>
+
+<tr>
+<td>7585</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:115</td>
+<td title="Message">Maximaizing the Browser</td>
+</tr>
+
+<tr>
+<td>11074</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:115</td>
+<td title="Message">Maximaizing the Browser</td>
+</tr>
+
+<tr>
+<td>22214</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.Base category">com.WebstaurantStore.libraries.Base</td>
+<td>Base.java:32</td>
+<td title="Message">website title is: WebstaurantStore: Restaurant Supplies &amp; Foodservice Equipment</td>
+</tr>
+
+<tr>
+<td>22252</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.pages.HomePage category">com.WebstaurantStore.pages.HomePage</td>
+<td>HomePage.java:17</td>
+<td title="Message">Searching for Stainless Work Table</td>
+</tr>
+
+<tr>
+<td>24838</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.pages.HomePage category">com.WebstaurantStore.pages.HomePage</td>
+<td>HomePage.java:26</td>
+<td title="Message">Clicking On the Search Button</td>
+</tr>
+
+<tr>
+<td>25743</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.Base category">com.WebstaurantStore.libraries.Base</td>
+<td>Base.java:32</td>
+<td title="Message">website title is: WebstaurantStore: Restaurant Supplies &amp; Foodservice Equipment</td>
+</tr>
+
+<tr>
+<td>25789</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.pages.HomePage category">com.WebstaurantStore.pages.HomePage</td>
+<td>HomePage.java:17</td>
+<td title="Message">Searching for Stainless Work Table</td>
+</tr>
+
+<tr>
+<td>27684</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.pages.HomePage category">com.WebstaurantStore.pages.HomePage</td>
+<td>HomePage.java:26</td>
+<td title="Message">Clicking On the Search Button</td>
+</tr>
+
+<tr>
+<td>40421</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.pages.HomePage category">com.WebstaurantStore.pages.HomePage</td>
+<td>SearchResultsPage.java:17</td>
+<td title="Message">Veifying that Search results for every product item has the word Table</td>
+</tr>
+
+<tr>
+<td>42422</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 72&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf</td>
+</tr>
+
+<tr>
+<td>42487</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 72&quot; 16-Gauge 304 Stainless Steel Commercial Work Table with Undershelf</td>
+</tr>
+
+<tr>
+<td>42553</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 60&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf</td>
+</tr>
+
+<tr>
+<td>40116</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.pages.HomePage category">com.WebstaurantStore.pages.HomePage</td>
+<td>SearchResultsPage.java:17</td>
+<td title="Message">Veifying that Search results for every product item has the word Table</td>
+</tr>
+
+<tr>
+<td>42658</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 96&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf</td>
+</tr>
+
+<tr>
+<td>42802</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 72&quot; 16-Gauge Stainless Steel Commercial Work Table with 4&quot; Backsplash and Undershelf</td>
+</tr>
+
+<tr>
+<td>42935</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 24&quot; x 48&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf</td>
+</tr>
+
+<tr>
+<td>43233</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 72&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with 4&quot; Backsplash and Galvanized Undershelf</td>
+</tr>
+
+<tr>
+<td>43415</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 48&quot; 16-Gauge Stainless Steel Commercial Work Table with 4&quot; Backsplash and Undershelf</td>
+</tr>
+
+<tr>
+<td>43529</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 24&quot; x 60&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf</td>
+</tr>
+
+<tr>
+<td>43627</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 24&quot; x 72&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf</td>
+</tr>
+
+<tr>
+<td>43688</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 60&quot; 16-Gauge Stainless Steel Commercial Work Table with 4&quot; Backsplash and Undershelf</td>
+</tr>
+
+<tr>
+<td>43822</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 24&quot; x 36&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf</td>
+</tr>
+
+<tr>
+<td>43933</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 60&quot; 16-Gauge 304 Stainless Steel Commercial Work Table with Undershelf</td>
+</tr>
+
+<tr>
+<td>44020</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 96&quot; 16-Gauge 304 Stainless Steel Commercial Work Table with Undershelf</td>
+</tr>
+
+<tr>
+<td>44088</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 48&quot; 16-Gauge 304 Stainless Steel Commercial Work Table with Undershelf</td>
+</tr>
+
+<tr>
+<td>44190</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 18&quot; x 48&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf</td>
+</tr>
+
+<tr>
+<td>44287</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 60&quot; 16 Gauge Stainless Steel Work Table with Sink</td>
+</tr>
+
+<tr>
+<td>44405</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency Spec Line 30&quot; x 72&quot; 14 Gauge Stainless Steel Commercial Work Table with Undershelf</td>
+</tr>
+
+<tr>
+<td>44473</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 96&quot; 16-Gauge Stainless Steel Commercial Work Table with 4&quot; Backsplash and Undershelf</td>
+</tr>
+
+<tr>
+<td>44548</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 48&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf</td>
+</tr>
+
+<tr>
+<td>44616</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 24&quot; x 24&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf</td>
+</tr>
+
+<tr>
+<td>44694</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 24&quot; x 60&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with 4&quot; Backsplash and Galvanized Undershelf</td>
+</tr>
+
+<tr>
+<td>44763</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 18&quot; x 36&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf</td>
+</tr>
+
+<tr>
+<td>44846</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 48&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with 4&quot; Backsplash and Galvanized Undershelf</td>
+</tr>
+
+<tr>
+<td>44911</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 60&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with 4&quot; Backsplash and Galvanized Undershelf</td>
+</tr>
+
+<tr>
+<td>45016</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 72&quot; 16 Gauge Stainless Steel Work Table with Sink</td>
+</tr>
+
+<tr>
+<td>45099</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 24&quot; x 72&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with 4&quot; Backsplash and Galvanized Undershelf</td>
+</tr>
+
+<tr>
+<td>42619</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 72&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf</td>
+</tr>
+
+<tr>
+<td>45157</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 18&quot; x 72&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf</td>
+</tr>
+
+<tr>
+<td>42678</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 72&quot; 16-Gauge 304 Stainless Steel Commercial Work Table with Undershelf</td>
+</tr>
+
+<tr>
+<td>45233</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 24&quot; x 60&quot; 16-Gauge Stainless Steel Commercial Work Table with 4&quot; Backsplash and Undershelf</td>
+</tr>
+
+<tr>
+<td>42766</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 60&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf</td>
+</tr>
+
+<tr>
+<td>45290</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 18&quot; x 24&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf</td>
+</tr>
+
+<tr>
+<td>42832</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 96&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf</td>
+</tr>
+
+<tr>
+<td>45358</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 24&quot; x 48&quot; 16-Gauge 304 Stainless Steel Commercial Work Table with Undershelf</td>
+</tr>
+
+<tr>
+<td>42898</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 72&quot; 16-Gauge Stainless Steel Commercial Work Table with 4&quot; Backsplash and Undershelf</td>
+</tr>
+
+<tr>
+<td>45433</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 48&quot; 16 Gauge Stainless Steel Work Table with Sink</td>
+</tr>
+
+<tr>
+<td>43030</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 24&quot; x 48&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf</td>
+</tr>
+
+<tr>
+<td>45545</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 18&quot; x 60&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf</td>
+</tr>
+
+<tr>
+<td>43162</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 72&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with 4&quot; Backsplash and Galvanized Undershelf</td>
+</tr>
+
+<tr>
+<td>45669</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 24&quot; x 48&quot; 16-Gauge Stainless Steel Commercial Work Table with 4&quot; Backsplash and Undershelf</td>
+</tr>
+
+<tr>
+<td>43232</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 48&quot; 16-Gauge Stainless Steel Commercial Work Table with 4&quot; Backsplash and Undershelf</td>
+</tr>
+
+<tr>
+<td>45749</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 24&quot; x 48&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with 4&quot; Backsplash and Galvanized Undershelf</td>
+</tr>
+
+<tr>
+<td>43308</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 24&quot; x 60&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf</td>
+</tr>
+
+<tr>
+<td>45814</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 24&quot; x 30&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf</td>
+</tr>
+
+<tr>
+<td>43393</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 24&quot; x 72&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf</td>
+</tr>
+
+<tr>
+<td>45893</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 24&quot; x 72&quot; 16-Gauge Stainless Steel Commercial Work Table with 4&quot; Backsplash and Undershelf</td>
+</tr>
+
+<tr>
+<td>43452</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 60&quot; 16-Gauge Stainless Steel Commercial Work Table with 4&quot; Backsplash and Undershelf</td>
+</tr>
+
+<tr>
+<td>45946</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 18&quot; x 30&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf</td>
+</tr>
+
+<tr>
+<td>46028</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency Spec Line 36&quot; x 72&quot; 14 Gauge Stainless Steel Commercial Work Table with Undershelf</td>
+</tr>
+
+<tr>
+<td>43557</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 24&quot; x 36&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf</td>
+</tr>
+
+<tr>
+<td>46096</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency Spec Line 30&quot; x 96&quot; 14 Gauge Stainless Steel Commercial Work Table with Undershelf</td>
+</tr>
+
+<tr>
+<td>43640</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 60&quot; 16-Gauge 304 Stainless Steel Commercial Work Table with Undershelf</td>
+</tr>
+
+<tr>
+<td>46195</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency Spec Line 30&quot; x 72&quot; 14 Gauge Stainless Steel Commercial Work Table with 4&quot; Backsplash and Undershelf</td>
+</tr>
+
+<tr>
+<td>43710</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 96&quot; 16-Gauge 304 Stainless Steel Commercial Work Table with Undershelf</td>
+</tr>
+
+<tr>
+<td>46273</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 24&quot; x 36&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with 4&quot; Backsplash and Galvanized Undershelf</td>
+</tr>
+
+<tr>
+<td>43784</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 48&quot; 16-Gauge 304 Stainless Steel Commercial Work Table with Undershelf</td>
+</tr>
+
+<tr>
+<td>43830</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 18&quot; x 48&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf</td>
+</tr>
+
+<tr>
+<td>46322</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 12&quot; 18-Gauge 304 Stainless Steel Equipment Filler Table with Backsplash and Galvanized Undershelf</td>
+</tr>
+
+<tr>
+<td>43871</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 60&quot; 16 Gauge Stainless Steel Work Table with Sink</td>
+</tr>
+
+<tr>
+<td>46400</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 36&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf</td>
+</tr>
+
+<tr>
+<td>43942</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency Spec Line 30&quot; x 72&quot; 14 Gauge Stainless Steel Commercial Work Table with Undershelf</td>
+</tr>
+
+<tr>
+<td>46445</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 24&quot; x 60&quot; 16-Gauge 304 Stainless Steel Commercial Work Table with Undershelf</td>
+</tr>
+
+<tr>
+<td>43994</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 96&quot; 16-Gauge Stainless Steel Commercial Work Table with 4&quot; Backsplash and Undershelf</td>
+</tr>
+
+<tr>
+<td>46520</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 24&quot; x 36&quot; 16-Gauge Stainless Steel Commercial Work Table with 4&quot; Backsplash and Undershelf</td>
+</tr>
+
+<tr>
+<td>44065</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 48&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf</td>
+</tr>
+
+<tr>
+<td>46594</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 36&quot; 16-Gauge Stainless Steel Commercial Work Table with 4&quot; Backsplash and Undershelf</td>
+</tr>
+
+<tr>
+<td>44130</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 24&quot; x 24&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf</td>
+</tr>
+
+<tr>
+<td>46671</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 96&quot; 16 Gauge Stainless Steel Work Table with Sink</td>
+</tr>
+
+<tr>
+<td>44195</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 24&quot; x 60&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with 4&quot; Backsplash and Galvanized Undershelf</td>
+</tr>
+
+<tr>
+<td>44256</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 18&quot; x 36&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf</td>
+</tr>
+
+<tr>
+<td>46748</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 84&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf</td>
+</tr>
+
+<tr>
+<td>44329</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 48&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with 4&quot; Backsplash and Galvanized Undershelf</td>
+</tr>
+
+<tr>
+<td>46826</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 24&quot; x 30&quot; 16-Gauge 304 Stainless Steel Commercial Work Table with Undershelf</td>
+</tr>
+
+<tr>
+<td>44427</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 60&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with 4&quot; Backsplash and Galvanized Undershelf</td>
+</tr>
+
+<tr>
+<td>46919</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 24&quot; x 72&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs, Undershelf, and Casters</td>
+</tr>
+
+<tr>
+<td>44513</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 72&quot; 16 Gauge Stainless Steel Work Table with Sink</td>
+</tr>
+
+<tr>
+<td>47008</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 24&quot; x 60&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs, Undershelf, and Casters</td>
+</tr>
+
+<tr>
+<td>47088</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 24&quot; x 36&quot; 16-Gauge 304 Stainless Steel Commercial Work Table with Undershelf</td>
+</tr>
+
+<tr>
+<td>44598</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 24&quot; x 72&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with 4&quot; Backsplash and Galvanized Undershelf</td>
+</tr>
+
+<tr>
+<td>44678</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 18&quot; x 72&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf</td>
+</tr>
+
+<tr>
+<td>47182</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 96&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with 4&quot; Backsplash and Galvanized Undershelf</td>
+</tr>
+
+<tr>
+<td>44735</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 24&quot; x 60&quot; 16-Gauge Stainless Steel Commercial Work Table with 4&quot; Backsplash and Undershelf</td>
+</tr>
+
+<tr>
+<td>47241</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency Spec Line 36&quot; x 96&quot; 14 Gauge Stainless Steel Commercial Work Table with Undershelf</td>
+</tr>
+
+<tr>
+<td>44804</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 18&quot; x 24&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf</td>
+</tr>
+
+<tr>
+<td>47307</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 36&quot; 16-Gauge 304 Stainless Steel Commercial Work Table with Undershelf</td>
+</tr>
+
+<tr>
+<td>44851</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 24&quot; x 48&quot; 16-Gauge 304 Stainless Steel Commercial Work Table with Undershelf</td>
+</tr>
+
+<tr>
+<td>47354</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency Spec Line 30&quot; x 96&quot; 14 Gauge Stainless Steel Commercial Work Table with 4&quot; Backsplash and Undershelf</td>
+</tr>
+
+<tr>
+<td>44933</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 48&quot; 16 Gauge Stainless Steel Work Table with Sink</td>
+</tr>
+
+<tr>
+<td>47435</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 24&quot; x 72&quot; 16-Gauge 304 Stainless Steel Commercial Work Table with Undershelf</td>
+</tr>
+
+<tr>
+<td>44983</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 18&quot; x 60&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf</td>
+</tr>
+
+<tr>
+<td>47485</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency Spec Line 30&quot; x 60&quot; 14 Gauge Stainless Steel Commercial Work Table with 4&quot; Backsplash and Undershelf</td>
+</tr>
+
+<tr>
+<td>47607</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 18&quot; x 48&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with 4&quot; Backsplash and Galvanized Undershelf</td>
+</tr>
+
+<tr>
+<td>47633</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.Base category">com.WebstaurantStore.libraries.Base</td>
+<td>Base.java:39</td>
+<td title="Message">After Method....</td>
+</tr>
+
+<tr>
+<td>45354</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 24&quot; x 48&quot; 16-Gauge Stainless Steel Commercial Work Table with 4&quot; Backsplash and Undershelf</td>
+</tr>
+
+<tr>
+<td>45448</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 24&quot; x 48&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with 4&quot; Backsplash and Galvanized Undershelf</td>
+</tr>
+
+<tr>
+<td>45575</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 24&quot; x 30&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf</td>
+</tr>
+
+<tr>
+<td>45631</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 24&quot; x 72&quot; 16-Gauge Stainless Steel Commercial Work Table with 4&quot; Backsplash and Undershelf</td>
+</tr>
+
+<tr>
+<td>45856</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 18&quot; x 30&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf</td>
+</tr>
+
+<tr>
+<td>46130</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency Spec Line 36&quot; x 72&quot; 14 Gauge Stainless Steel Commercial Work Table with Undershelf</td>
+</tr>
+
+<tr>
+<td>46229</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency Spec Line 30&quot; x 96&quot; 14 Gauge Stainless Steel Commercial Work Table with Undershelf</td>
+</tr>
+
+<tr>
+<td>46267</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency Spec Line 30&quot; x 72&quot; 14 Gauge Stainless Steel Commercial Work Table with 4&quot; Backsplash and Undershelf</td>
+</tr>
+
+<tr>
+<td>46331</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 24&quot; x 36&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with 4&quot; Backsplash and Galvanized Undershelf</td>
+</tr>
+
+<tr>
+<td>46375</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 12&quot; 18-Gauge 304 Stainless Steel Equipment Filler Table with Backsplash and Galvanized Undershelf</td>
+</tr>
+
+<tr>
+<td>46437</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 36&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf</td>
+</tr>
+
+<tr>
+<td>46486</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 24&quot; x 60&quot; 16-Gauge 304 Stainless Steel Commercial Work Table with Undershelf</td>
+</tr>
+
+<tr>
+<td>46552</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 24&quot; x 36&quot; 16-Gauge Stainless Steel Commercial Work Table with 4&quot; Backsplash and Undershelf</td>
+</tr>
+
+<tr>
+<td>46596</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 36&quot; 16-Gauge Stainless Steel Commercial Work Table with 4&quot; Backsplash and Undershelf</td>
+</tr>
+
+<tr>
+<td>46643</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 96&quot; 16 Gauge Stainless Steel Work Table with Sink</td>
+</tr>
+
+<tr>
+<td>46698</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 84&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs and Undershelf</td>
+</tr>
+
+<tr>
+<td>46741</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 24&quot; x 30&quot; 16-Gauge 304 Stainless Steel Commercial Work Table with Undershelf</td>
+</tr>
+
+<tr>
+<td>46804</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 24&quot; x 72&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs, Undershelf, and Casters</td>
+</tr>
+
+<tr>
+<td>46846</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 24&quot; x 60&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with Galvanized Legs, Undershelf, and Casters</td>
+</tr>
+
+<tr>
+<td>46924</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 24&quot; x 36&quot; 16-Gauge 304 Stainless Steel Commercial Work Table with Undershelf</td>
+</tr>
+
+<tr>
+<td>46986</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 96&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with 4&quot; Backsplash and Galvanized Undershelf</td>
+</tr>
+
+<tr>
+<td>47053</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency Spec Line 36&quot; x 96&quot; 14 Gauge Stainless Steel Commercial Work Table with Undershelf</td>
+</tr>
+
+<tr>
+<td>47116</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 30&quot; x 36&quot; 16-Gauge 304 Stainless Steel Commercial Work Table with Undershelf</td>
+</tr>
+
+<tr>
+<td>47193</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency Spec Line 30&quot; x 96&quot; 14 Gauge Stainless Steel Commercial Work Table with 4&quot; Backsplash and Undershelf</td>
+</tr>
+
+<tr>
+<td>47261</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 24&quot; x 72&quot; 16-Gauge 304 Stainless Steel Commercial Work Table with Undershelf</td>
+</tr>
+
+<tr>
+<td>47339</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency Spec Line 30&quot; x 60&quot; 14 Gauge Stainless Steel Commercial Work Table with 4&quot; Backsplash and Undershelf</td>
+</tr>
+
+<tr>
+<td>47389</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:287</td>
+<td title="Message">Regency 18&quot; x 48&quot; 18-Gauge 304 Stainless Steel Commercial Work Table with 4&quot; Backsplash and Galvanized Undershelf</td>
+</tr>
+
+<tr>
+<td>47401</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.Base category">com.WebstaurantStore.libraries.Base</td>
+<td>Base.java:39</td>
+<td title="Message">After Method....</td>
+</tr>
+
+<tr>
+<td>52780</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.Base category">com.WebstaurantStore.libraries.Base</td>
+<td>Base.java:50</td>
+<td title="Message">After Class....</td>
+</tr>
+
+<tr>
+<td>56821</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.Base category">com.WebstaurantStore.libraries.Base</td>
+<td>Base.java:50</td>
+<td title="Message">After Class....</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Selenium Logs</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Nov 16 18:08:22 EST 2021<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:101</td>
+<td title="Message">starting 'Chrome' browser.</td>
+</tr>
+
+<tr>
+<td>4018</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:117</td>
+<td title="Message">Maximaizing the Browser</td>
+</tr>
+
+<tr>
+<td>6428</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.Base category">com.WebstaurantStore.libraries.Base</td>
+<td>Base.java:32</td>
+<td title="Message">website title is: WebstaurantStore: Restaurant Supplies &amp; Foodservice Equipment</td>
+</tr>
+
+<tr>
+<td>6450</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.pages.HomePage category">com.WebstaurantStore.pages.HomePage</td>
+<td>HomePage.java:17</td>
+<td title="Message">Searching for Stainless Work Table</td>
+</tr>
+
+<tr>
+<td>7281</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.pages.HomePage category">com.WebstaurantStore.pages.HomePage</td>
+<td>HomePage.java:26</td>
+<td title="Message">Clicking On the Search Button</td>
+</tr>
+
+<tr>
+<td>12541</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.pages.HomePage category">com.WebstaurantStore.pages.HomePage</td>
+<td>SearchResultsPage.java:22</td>
+<td title="Message">Veifying that Search results for every product item has the word Table</td>
+</tr>
+
+<tr>
+<td>13851</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>13882</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>13920</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>13946</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>13972</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>13993</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>14014</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>14041</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>14063</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>14087</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>14121</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>14153</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>14193</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>14221</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>14245</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>14269</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>14292</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>14316</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>14342</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>14366</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>14388</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>14411</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>14431</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>14449</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>14470</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>14489</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>14511</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>14533</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>14605</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>14647</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>14670</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>14693</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>14713</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>14734</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>14755</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>14775</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>14795</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>14817</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>14836</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>14855</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>14874</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>14893</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>14913</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>14933</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>14952</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>14970</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>14989</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>15008</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>15028</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>15046</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>15065</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>15084</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>15102</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>15121</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>15139</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>15160</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>15180</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>15209</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>15231</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>15255</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>15261</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.Base category">com.WebstaurantStore.libraries.Base</td>
+<td>Base.java:39</td>
+<td title="Message">After Method....</td>
+</tr>
+
+<tr>
+<td>20683</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.Base category">com.WebstaurantStore.libraries.Base</td>
+<td>Base.java:50</td>
+<td title="Message">After Class....</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Selenium Logs</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Nov 16 18:09:58 EST 2021<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:101</td>
+<td title="Message">starting 'Chrome' browser.</td>
+</tr>
+
+<tr>
+<td>3684</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:117</td>
+<td title="Message">Maximaizing the Browser</td>
+</tr>
+
+<tr>
+<td>7927</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.Base category">com.WebstaurantStore.libraries.Base</td>
+<td>Base.java:32</td>
+<td title="Message">website title is: WebstaurantStore: Restaurant Supplies &amp; Foodservice Equipment</td>
+</tr>
+
+<tr>
+<td>7950</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.pages.HomePage category">com.WebstaurantStore.pages.HomePage</td>
+<td>HomePage.java:17</td>
+<td title="Message">Searching for Stainless Work Table</td>
+</tr>
+
+<tr>
+<td>8617</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.pages.HomePage category">com.WebstaurantStore.pages.HomePage</td>
+<td>HomePage.java:26</td>
+<td title="Message">Clicking On the Search Button</td>
+</tr>
+
+<tr>
+<td>14528</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.pages.HomePage category">com.WebstaurantStore.pages.HomePage</td>
+<td>SearchResultsPage.java:22</td>
+<td title="Message">Veifying that Search results for every product item has the word Table</td>
+</tr>
+
+<tr>
+<td>15836</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>15865</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>15909</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>15933</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>15960</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>15982</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16007</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16028</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16049</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16067</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16103</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16137</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16164</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16187</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16212</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16238</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16262</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16283</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16307</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16327</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16347</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16367</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16387</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16405</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16423</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16442</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16463</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16486</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16507</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16527</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16548</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16572</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16594</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16614</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16634</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16655</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16675</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16696</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16715</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16735</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16753</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16774</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16792</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16810</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16830</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16849</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16870</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16889</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16907</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16923</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16941</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16959</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16978</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>16995</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>17016</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>17035</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>17056</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>17076</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>17095</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>17115</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 9</td>
+</tr>
+
+<tr>
+<td>17119</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.Base category">com.WebstaurantStore.libraries.Base</td>
+<td>Base.java:39</td>
+<td title="Message">After Method....</td>
+</tr>
+
+<tr>
+<td>22482</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.Base category">com.WebstaurantStore.libraries.Base</td>
+<td>Base.java:50</td>
+<td title="Message">After Class....</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Selenium Logs</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Nov 16 18:13:16 EST 2021<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:101</td>
+<td title="Message">starting 'Chrome' browser.</td>
+</tr>
+
+<tr>
+<td>5108</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:117</td>
+<td title="Message">Maximaizing the Browser</td>
+</tr>
+
+<tr>
+<td>11609</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.Base category">com.WebstaurantStore.libraries.Base</td>
+<td>Base.java:32</td>
+<td title="Message">website title is: WebstaurantStore: Restaurant Supplies &amp; Foodservice Equipment</td>
+</tr>
+
+<tr>
+<td>11639</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.pages.HomePage category">com.WebstaurantStore.pages.HomePage</td>
+<td>HomePage.java:17</td>
+<td title="Message">Searching for Stainless Work Table</td>
+</tr>
+
+<tr>
+<td>12437</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.pages.HomePage category">com.WebstaurantStore.pages.HomePage</td>
+<td>HomePage.java:26</td>
+<td title="Message">Clicking On the Search Button</td>
+</tr>
+
+<tr>
+<td>19912</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.pages.HomePage category">com.WebstaurantStore.pages.HomePage</td>
+<td>SearchResultsPage.java:22</td>
+<td title="Message">Veifying that Search results for every product item has the word Table</td>
+</tr>
+
+<tr>
+<td>21667</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.Base category">com.WebstaurantStore.libraries.Base</td>
+<td>Base.java:39</td>
+<td title="Message">After Method....</td>
+</tr>
+
+<tr>
+<td>27057</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.Base category">com.WebstaurantStore.libraries.Base</td>
+<td>Base.java:50</td>
+<td title="Message">After Class....</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Selenium Logs</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Nov 16 18:29:44 EST 2021<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:101</td>
+<td title="Message">starting 'Chrome' browser.</td>
+</tr>
+
+<tr>
+<td>5137</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:117</td>
+<td title="Message">Maximaizing the Browser</td>
+</tr>
+
+<tr>
+<td>8548</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.Base category">com.WebstaurantStore.libraries.Base</td>
+<td>Base.java:32</td>
+<td title="Message">website title is: WebstaurantStore: Restaurant Supplies &amp; Foodservice Equipment</td>
+</tr>
+
+<tr>
+<td>8609</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.pages.HomePage category">com.WebstaurantStore.pages.HomePage</td>
+<td>HomePage.java:17</td>
+<td title="Message">Searching for Stainless Work Table</td>
+</tr>
+
+<tr>
+<td>10066</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.pages.HomePage category">com.WebstaurantStore.pages.HomePage</td>
+<td>HomePage.java:26</td>
+<td title="Message">Clicking On the Search Button</td>
+</tr>
+
+<tr>
+<td>16727</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.pages.HomePage category">com.WebstaurantStore.pages.HomePage</td>
+<td>SearchResultsPage.java:22</td>
+<td title="Message">Veifying that Search results for every product item has the word Table</td>
+</tr>
+
+<tr>
+<td>18208</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>18313</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>18368</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>18407</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>18437</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>18462</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>18490</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>18515</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>18538</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>18561</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>18583</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>18605</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>18627</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>18649</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>18671</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>18709</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>18734</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>18773</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>18812</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>18860</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>18909</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>18963</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>19024</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>19085</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>19135</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>19182</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>19229</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>19265</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>19316</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>19359</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>19402</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>19438</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>19475</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>19526</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>19569</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>19609</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>19652</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>19679</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>19714</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>19753</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>19781</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>19823</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>19869</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>19912</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>19963</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>20019</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>20066</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>20113</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>20156</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>20190</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>20228</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>20273</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>20313</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>20352</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>20386</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>20427</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>20467</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>20524</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>20598</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>20652</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:292</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>20660</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.Base category">com.WebstaurantStore.libraries.Base</td>
+<td>Base.java:39</td>
+<td title="Message">After Method....</td>
+</tr>
+
+<tr>
+<td>26020</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.Base category">com.WebstaurantStore.libraries.Base</td>
+<td>Base.java:50</td>
+<td title="Message">After Class....</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Selenium Logs</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Nov 16 18:32:16 EST 2021<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:100</td>
+<td title="Message">starting 'Chrome' browser.</td>
+</tr>
+
+<tr>
+<td>5461</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:116</td>
+<td title="Message">Maximaizing the Browser</td>
+</tr>
+
+<tr>
+<td>24346</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.Base category">com.WebstaurantStore.libraries.Base</td>
+<td>Base.java:32</td>
+<td title="Message">website title is: WebstaurantStore: Restaurant Supplies &amp; Foodservice Equipment</td>
+</tr>
+
+<tr>
+<td>24371</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.pages.HomePage category">com.WebstaurantStore.pages.HomePage</td>
+<td>HomePage.java:17</td>
+<td title="Message">Searching for Stainless Work Table</td>
+</tr>
+
+<tr>
+<td>25107</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.pages.HomePage category">com.WebstaurantStore.pages.HomePage</td>
+<td>HomePage.java:26</td>
+<td title="Message">Clicking On the Search Button</td>
+</tr>
+
+<tr>
+<td>30947</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.pages.HomePage category">com.WebstaurantStore.pages.HomePage</td>
+<td>SearchResultsPage.java:22</td>
+<td title="Message">Veifying that Search results for every product item has the word Table</td>
+</tr>
+
+<tr>
+<td>35109</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:290</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>35133</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.Base category">com.WebstaurantStore.libraries.Base</td>
+<td>Base.java:39</td>
+<td title="Message">After Method....</td>
+</tr>
+
+<tr>
+<td>40422</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.Base category">com.WebstaurantStore.libraries.Base</td>
+<td>Base.java:50</td>
+<td title="Message">After Class....</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Selenium Logs</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Nov 16 18:56:11 EST 2021<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:100</td>
+<td title="Message">starting 'Chrome' browser.</td>
+</tr>
+
+<tr>
+<td>5108</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:116</td>
+<td title="Message">Maximaizing the Browser</td>
+</tr>
+
+<tr>
+<td>9660</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.Base category">com.WebstaurantStore.libraries.Base</td>
+<td>Base.java:32</td>
+<td title="Message">website title is: WebstaurantStore: Restaurant Supplies &amp; Foodservice Equipment</td>
+</tr>
+
+<tr>
+<td>9684</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.pages.HomePage category">com.WebstaurantStore.pages.HomePage</td>
+<td>HomePage.java:17</td>
+<td title="Message">Searching for Stainless Work Table</td>
+</tr>
+
+<tr>
+<td>11200</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.pages.HomePage category">com.WebstaurantStore.pages.HomePage</td>
+<td>HomePage.java:26</td>
+<td title="Message">Clicking On the Search Button</td>
+</tr>
+
+<tr>
+<td>18045</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.Base category">com.WebstaurantStore.libraries.Base</td>
+<td>Base.java:39</td>
+<td title="Message">After Method....</td>
+</tr>
+
+<tr>
+<td>23450</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.Base category">com.WebstaurantStore.libraries.Base</td>
+<td>Base.java:50</td>
+<td title="Message">After Class....</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Selenium Logs</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Nov 16 19:10:47 EST 2021<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:100</td>
+<td title="Message">starting 'Chrome' browser.</td>
+</tr>
+
+<tr>
+<td>6009</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:116</td>
+<td title="Message">Maximaizing the Browser</td>
+</tr>
+
+<tr>
+<td>8897</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.Base category">com.WebstaurantStore.libraries.Base</td>
+<td>Base.java:32</td>
+<td title="Message">website title is: WebstaurantStore: Restaurant Supplies &amp; Foodservice Equipment</td>
+</tr>
+
+<tr>
+<td>8926</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.pages.HomePage category">com.WebstaurantStore.pages.HomePage</td>
+<td>HomePage.java:17</td>
+<td title="Message">Searching for Stainless Work Table</td>
+</tr>
+
+<tr>
+<td>10128</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.pages.HomePage category">com.WebstaurantStore.pages.HomePage</td>
+<td>HomePage.java:26</td>
+<td title="Message">Clicking On the Search Button</td>
+</tr>
+
+<tr>
+<td>17479</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.Base category">com.WebstaurantStore.libraries.Base</td>
+<td>Base.java:39</td>
+<td title="Message">After Method....</td>
+</tr>
+
+<tr>
+<td>22845</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.Base category">com.WebstaurantStore.libraries.Base</td>
+<td>Base.java:50</td>
+<td title="Message">After Class....</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Selenium Logs</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Nov 16 19:12:51 EST 2021<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:100</td>
+<td title="Message">starting 'Chrome' browser.</td>
+</tr>
+
+<tr>
+<td>3282</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:116</td>
+<td title="Message">Maximaizing the Browser</td>
+</tr>
+
+<tr>
+<td>6329</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.Base category">com.WebstaurantStore.libraries.Base</td>
+<td>Base.java:32</td>
+<td title="Message">website title is: WebstaurantStore: Restaurant Supplies &amp; Foodservice Equipment</td>
+</tr>
+
+<tr>
+<td>6354</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.pages.HomePage category">com.WebstaurantStore.pages.HomePage</td>
+<td>HomePage.java:17</td>
+<td title="Message">Searching for Stainless Work Table</td>
+</tr>
+
+<tr>
+<td>7471</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.pages.HomePage category">com.WebstaurantStore.pages.HomePage</td>
+<td>HomePage.java:26</td>
+<td title="Message">Clicking On the Search Button</td>
+</tr>
+
+<tr>
+<td>11420</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.pages.HomePage category">com.WebstaurantStore.pages.HomePage</td>
+<td>SearchResultsPage.java:30</td>
+<td title="Message">Veifying that Search results for every product item has the word Table</td>
+</tr>
+
+<tr>
+<td>12736</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.MySeleniumLibrary category">com.WebstaurantStore.libraries.MySeleniumLibrary</td>
+<td>MySeleniumLibrary.java:289</td>
+<td title="Message">Last Page Results 60</td>
+</tr>
+
+<tr>
+<td>12742</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.Base category">com.WebstaurantStore.libraries.Base</td>
+<td>Base.java:39</td>
+<td title="Message">After Method....</td>
+</tr>
+
+<tr>
+<td>17970</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.WebstaurantStore.libraries.Base category">com.WebstaurantStore.libraries.Base</td>
+<td>Base.java:50</td>
+<td title="Message">After Class....</td>
+</tr>
