@@ -11,9 +11,8 @@ import org.testng.annotations.AfterMethod;
 
 import org.testng.annotations.BeforeMethod;
 
-import com.WebstaurantStore.libraries.MySeleniumLibrary.Browser;
-
 public class Base {
+	
 	final static Logger logger = Logger.getLogger(Base.class);
 
 	public static MySeleniumLibrary myLib;
@@ -23,11 +22,15 @@ public class Base {
 	@BeforeMethod
 	public void setUp() {
 		myLib = new MySeleniumLibrary();
-		driver = myLib.startBrowser(Browser.CHROME);
+		driver = myLib.startChromeBrowser();
 		driver.get(url);
+		logger.info("Website URL is " + url);
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+		logger.info("Setting up Page Load to 30 Seconds");
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		logger.info("Setting up the Implicit to 30 Seconds");
 		driver.manage().window().maximize();
+		logger.info("Maxmizing the Window");
 		String websiteTitle = driver.getTitle();
 		logger.info("website title is: " + websiteTitle);
 		String expectedTitle = "WebstaurantStore: Restaurant Supplies & Foodservice Equipment";

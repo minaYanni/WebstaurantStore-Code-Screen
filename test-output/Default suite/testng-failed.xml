@@ -5,7 +5,7 @@
     <classes>
       <class name="com.WebstaurantStore.tests.WebstaurantStoreTests">
         <methods>
-          <include name="searchForStainlessWorkTable"/>
+          <include name="searchForStainlessWorkTableFailedTestCase"/>
           <include name="setUp"/>
           <include name="cleanUpProcess"/>
           <include name="closingBrowsers"/>

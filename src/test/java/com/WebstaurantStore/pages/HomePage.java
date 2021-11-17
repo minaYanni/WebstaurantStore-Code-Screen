@@ -13,7 +13,7 @@ public class HomePage extends Base {
 	}
 	
 	public HomePage searchForStainlessWorkTable(String inputMerchandise) {
-		
+	
 		logger.info("Searching for Stainless Work Table");
 		myLib.enterText(By.id("searchval"),inputMerchandise );
 		
@@ -25,7 +25,7 @@ public class HomePage extends Base {
 	public SearchResultsPage clickingOnSearchButton() {
 		logger.info("Clicking On the Search Button");
 		myLib.clickButton(By.cssSelector("#searchForm > div > button"));
-		
+		logger.info("Navigating to the Search Result pages");
 		return new SearchResultsPage();
 		
 	}
